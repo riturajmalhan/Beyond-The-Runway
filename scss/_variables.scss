@@ -1,0 +1,47 @@
+// Variables
+
+// Site Colours
+
+// BG Colours
+$bg-body-color: #beC3C6;
+$bg-wrapper-color: white;
+$bg-nav-hover-color:rgba(red, 0.3);
+$bg-footer-color: #cdd4db;
+
+// Text Colours
+$text-color-dark: black;
+$text-color-med: #454545;
+$text-color-light: white;
+$text-color-footer: #373d45;
+$text-color-footer-nav-hover: #4777b7; 
+
+// Site Colours
+$site-highlight-color: #de0214;
+$site-stars-color: #ffde00;
+$site-stars-base-color: #cac8c8;
+
+// Border Colours
+$footer-border-color: #b2bcc7;
+
+// Layout Variables
+$site-width: 1200px;
+$padding: rem(30);
+$gutter: 2; // essentially 2%
+$header-height: 76px;
+$header-height-mobile: 54px;
+$margin: rem(30);
+
+// Columns
+$one-col: 100%;
+$two-col: col-width(2);
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';
+
+// Breakpoints
+$tablet-landscape: em(1024);
+$tablet-landscape-medium: em(860);
+$tablet-portait: em(768);
+$tablet-portrait-medium: em(720);
+$phone-wide: em(580);
+$phone: em(480);

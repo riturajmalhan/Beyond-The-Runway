@@ -1,0 +1,118 @@
+ // Main Nav Styles
+nav {
+    // locally scoped variable
+    $height: 40px;
+    // $border: 1px solid white;
+    height: $height;
+
+    ul {
+        @include flatten;
+        list-style: none;
+        display: flex;
+        @media (max-width: $phone-wide){
+            display: block;
+        }
+    }
+
+    li {
+        flex: 1;
+        
+        
+    }
+
+    a {
+        display: block;
+        color: $text-color-dark;
+        text-align: center;
+        font-size: 1.2em;
+        text-decoration: none;
+        padding: $padding;
+        
+    
+        
+        #{$link-hover-selector} {
+            background-color: $bg-nav-hover-color;
+    
+        }
+
+        @at-root nav li:last-child a {
+            border-right: none;
+        }
+
+    }
+
+   
+
+}
+ /* Hamburger Styles */
+ .hamburger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    font-size: 2.4em;
+}
+
+.hamburger:focus,
+.hamburger-icon:focus {
+    outline: none;
+}
+
+.hamburger:focus .hamburger-icon {
+    outline: 5px solid #69c1db;
+}
+
+.hamburger-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+header {
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+}
+
+nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.3s ease;
+}
+
+nav ul {
+    display: block;
+}
+
+nav a {
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #afafaf;
+    background-color: rgb(185, 35, 35);
+}
+
+nav li:last-child a {
+    border-bottom: 1px solid #afafaf;
+}
+
+.show nav {
+    height: 300px;
+}

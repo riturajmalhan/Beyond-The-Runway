@@ -1,0 +1,63 @@
+// Mixins
+
+// Mixin for centering element
+// with margin-left: auto
+// and margin-right: auto;
+@mixin center($margin-center: true, $zero-margin: true){
+    @if($margin-center){
+        @if($zero-margin){
+            margin: 0 auto;
+        }@else {
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }@else {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @if($zero-margin){
+            margin: 0;
+        }
+    }
+}
+
+// Mixin for clearing out
+// margins and padding and
+// setting the line-height to 1 
+// ...useful mainly on typographic elements
+@mixin flatten($list: false) {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    @if($list){
+        list-style: none;
+    }
+}
+
+// Mixins for creating a flex row of
+// and evenly spacing out the
+// elements along the row
+@mixin flex-layout-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+// Media Query Mixin
+@mixin mq($w) {
+    @media (max-width: $w) {
+        @content;
+    }
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "r1 r2 r3 r3"
+    "e1 e1 e2 e3";
+}

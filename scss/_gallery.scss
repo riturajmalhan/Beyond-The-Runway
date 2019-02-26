@@ -1,0 +1,36 @@
+.gallery-grid {
+
+    margin: $margin;
+
+    @include grid;
+
+    .item-01 {
+        grid-area: r1;
+    }
+    .item-02 {
+        grid-area: r2;
+    }
+    .item-03 {
+        grid-area: r3;
+    }
+    .item-04{
+        grid-area: e1;
+    }
+    .item-05 {
+        grid-area: e2;
+    }
+    .item-06 {
+        grid-area: e3;
+    }
+}
+
+.gallery {
+     
+    h2 {
+        text-align: center;
+    }
+}
+        
+
+
+
