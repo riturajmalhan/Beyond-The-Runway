@@ -1,7 +1,7 @@
  // Main Nav Styles
 nav {
     // locally scoped variable
-    $height: 40px;
+    $height: 2.5em;
     // $border: 1px solid white;
     height: $height;
 
@@ -114,5 +114,5 @@ nav li:last-child a {
 }
 
 .show nav {
-    height: 300px;
+    height: 18.75em;
 }

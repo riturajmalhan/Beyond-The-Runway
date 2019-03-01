@@ -1,4 +1,4 @@
-.gallery-grid {
+.gallery{
 
     margin: $margin;
 
@@ -16,12 +16,7 @@
     .item-04{
         grid-area: e1;
     }
-    .item-05 {
-        grid-area: e2;
-    }
-    .item-06 {
-        grid-area: e3;
-    }
+ 
 }
 
 .gallery {
