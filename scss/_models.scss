@@ -26,13 +26,15 @@
 }
 
 .gallery-item {
+  
    h2{
-    font-size: 1em; 
+    font-size: 2em; 
+    margin-bottom: 3.5em;
    }
-   line-height: 1em;
+   line-height: .1em;
+   
    
 }
-        
-
-
-
+.show .gallery{
+    margin-top: 18em;
+}
