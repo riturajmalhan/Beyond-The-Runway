@@ -2,28 +2,35 @@
 
     margin: $margin;
 
-    @include grid;
+    // @include grid;
 
-    .item-01 {
-        grid-area: r1;
-    }
-    .item-02 {
-        grid-area: r2;
-    }
-    .item-03 {
-        grid-area: r3;
-    }
-    .item-04{
-        grid-area: e1;
-    }
- 
-}
-
-.gallery {
-     
+    // .item-01 {
+    //     grid-area: r1;
+    // }
+    // .item-02 {
+    //     grid-area: r2;
+    // }
+    // .item-03 {
+    //     grid-area: r3;
+    // }
+    // .item-04{
+    //     grid-area: e1;
+    // }
+    display: flex;
+    flex-direction: column;
     h2 {
         text-align: center;
+        font-size: 3em;
     }
+
+}
+
+.gallery-item {
+   h2{
+    font-size: 1em; 
+   }
+   line-height: 1em;
+   
 }
         
 
