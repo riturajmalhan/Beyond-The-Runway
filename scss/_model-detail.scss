@@ -1,0 +1,42 @@
+.gallery{
+
+    margin: $margin;
+
+    // @include grid;
+
+    // .item-01 {
+    //     grid-area: r1;
+    // }
+    // .item-02 {
+    //     grid-area: r2;
+    // }
+    // .item-03 {
+    //     grid-area: r3;
+    // }
+    // .item-04{
+    //     grid-area: e1;
+    // }
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+}
+
+
+.show .gallery{
+    margin-top: 18em;
+}
+.measurements li {
+    @include flatten;
+    display: inline-block;
+    
+	margin-right: 0.4rem;
+	white-space: nowrap;
+}
+.measurements label {
+	margin: 0;
+	font-weight: 600;
+}
