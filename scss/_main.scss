@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+/*image reset*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image {
+height: 100vh;
+background-size: cover;
+}
+
+.hero-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
