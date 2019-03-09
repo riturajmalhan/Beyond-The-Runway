@@ -105,11 +105,18 @@ nav {
 @include mq(520px){
     nav{
        display: block;
+       margin-left: calc(38% - 10em);
     
    }
    nav li{
        display: inline-block;
    }
+
+} 
+@include mq(640px){
+    nav{
+       margin-left: 0;
+    }
 
 } 
 

@@ -71,11 +71,21 @@ $breakpoints: (
 
 @mixin grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr 1fr 1fr;
     grid-template-areas: 
-    "r1 r2 r3 r3"
-    "e1 e1 e2 e3";
+    "h1 h1"
+    "r1 r2"
+    "e1 e2";
+}
+@mixin grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "r1 r2 e1 e2"
+    
 }
 
 // Media Query Mixin   //DONE BY MICHAEL
