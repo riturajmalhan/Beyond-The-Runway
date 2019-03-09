@@ -1,6 +1,10 @@
 // Header Styles
 header {
     @include flex-layout-row;
-    height: $header-height;
+    padding-top: 8px;
+
+    .logo {
+        max-width: 230px;
+    }
 
 }

@@ -1,6 +1,6 @@
 .gallery{
 
-    margin: $margin;
+    //margin: $margin;
 
     // @include grid;
 
@@ -25,10 +25,6 @@
 
 }
 
-
-.show .gallery{
-    margin-top: 18em;
-}
 .measurements li {
     @include flatten;
     display: inline-block;

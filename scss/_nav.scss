@@ -1,22 +1,32 @@
  // Main Nav Styles
 nav {
+
+
+    
+    // HEY RITU, MICHAEL SAID ALL THINGS BELOW CAN GO. YOU DECIDE.
     // locally scoped variable
-    $height: 2.5em;
+    //$height: 2.5em;
     // $border: 1px solid white;
-    height: $height;
+    //height: $height;
+
+
+    
+    width: 100%;
+    display: none;
+
+    // compiles to .show nav {} -- DONE BY MICHAEL
+    .show & {
+        display: block;
+    }
 
     ul {
         @include flatten;
         list-style: none;
-        display: flex;
-        @media (max-width: $phone-wide){
-            display: block;
-        }
+        display: block;
     }
 
     li {
         flex: 1;
-        
         
     }
 
@@ -27,9 +37,7 @@ nav {
         font-size: 1.2em;
         text-decoration: none;
         padding: $padding;
-        
-    
-        
+              
         #{$link-hover-selector} {
             background-color: $bg-nav-hover-color;
     
@@ -85,35 +93,39 @@ nav {
     border: 0;
 }
 
-header {
-    flex-wrap: wrap;
-    align-items: center;
-    height: auto;
-}
 
-nav {
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-    transition: height 0.3s ease;
-}
+// HEY RITU, MICHAEL SAID ALL THINGS BELOW CAN GO. YOU DECIDE.
 
-nav ul {
-    display: block;
-}
 
-nav a {
-    line-height: 40px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid #afafaf;
-    background-color: rgba(197, 179, 179, 0.548);
-}
+// header {
+//     flex-wrap: wrap;
+//     align-items: center;
+//     height: auto;
+// }
 
-nav li:last-child a {
-    border-bottom: 1px solid #afafaf;
-}
+// nav {
+//     height: 0;
+//     overflow: hidden;
+//     width: 100%;
+//     transition: height 0.3s ease;
+// }
 
-.show nav {
-    height: 18.75em;
-}
+// nav ul {
+//     display: block;
+// }
+
+// nav a {
+//     line-height: 40px;
+//     border-bottom: 1px solid black;
+//     border-top: 1px solid #afafaf;
+//     background-color: rgba(197, 179, 179, 0.548);
+// }
+
+// nav li:last-child a {
+//     border-bottom: 1px solid #afafaf;
+// }
+
+// .show nav {
+//     height: 18.75em;
+// }
 

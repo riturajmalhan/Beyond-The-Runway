@@ -77,3 +77,16 @@ $breakpoints: (
     "r1 r2 r3 r3"
     "e1 e1 e2 e3";
 }
+
+// Media Query Mixin   //DONE BY MICHAEL
+@mixin mq($w, $min-width: true){
+    @if($min-width){
+        @media (min-width: $w){
+            @content;
+        }
+    }@else{
+        @media (max-width: $w){
+            @content;
+        }
+    }
+}
