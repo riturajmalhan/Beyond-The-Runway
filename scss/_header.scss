@@ -6,5 +6,29 @@ header {
     .logo {
         max-width: 230px;
     }
+   
+}
+@include mq(520px){
+    header{
+        display: block;
+    }
+    .logo{
+        max-width: 100%;
+        margin-left: calc(43% - 10em);
+    }
+    header ul{
+        display: inline-block;  
+        margin-left: 0.8em;
+          }
+     
+}
+@include mq(640px){
+    header ul{
+        display: flex;  
+          }
+      .logo{
+          margin-left: calc(43% - 7em);
+      }    
 
+    
 }

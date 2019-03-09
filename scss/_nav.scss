@@ -46,12 +46,14 @@ nav {
         @at-root nav li:last-child a {
             border-right: none;
         }
-
+      
     }
 
    
 
 }
+
+
  /* Hamburger Styles */
  .hamburger {
     display: block;
@@ -65,6 +67,13 @@ nav {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @include mq(520px){
+         & {
+            display: none;
+        }
+        
+
+    } 
 }
 
 .hamburger-icon {
@@ -92,6 +101,18 @@ nav {
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+@include mq(520px){
+    nav{
+       display: block;
+    
+   }
+   nav li{
+       display: inline-block;
+   }
+
+} 
+
 
 
 // HEY RITU, MICHAEL SAID ALL THINGS BELOW CAN GO. YOU DECIDE.
