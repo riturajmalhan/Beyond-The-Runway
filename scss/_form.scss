@@ -1,6 +1,9 @@
 
 .wrapper {
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: .8em;
 }
 
 
@@ -35,4 +38,29 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+}
+@include mq(400px){
+   
+    .wrapper {
+     font-size: 1em;
+    }
+    
+}
+@include mq(640px){
+   
+    .wrapper p {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+@include mq(1000px){
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+  
 }
