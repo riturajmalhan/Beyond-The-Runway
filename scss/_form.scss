@@ -4,22 +4,36 @@
     flex-direction: column;
     padding: 10px;
     font-size: .8em;
+    margin: 1em 1em 1em 1em; 
 }
 
 
 .form-guide p {
     margin-top: 0;
     margin-bottom: 1rem;
-}
-
-
-.form-guide p {
+    align-items: center;
+    align-content: center;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+
+.form-submission label{
+    width:180px;
+    clear:left;
+    text-align:left;
+    padding-right:10px;
+        
+}
+
+.form-submission input, select {
+        display: inline-block;
+        float:right;
+}
+
 
 body {
     font-family: 'HK Grotesk', sans-serif;
@@ -59,8 +73,20 @@ body {
     .wrapper {
         display: flex;
         flex-direction: row;
+        padding: 10px;
+        font-size: .8em;
+    }  
+
+    .form-guide, .submission {
+        width: 50%;
     }
-    
-    
-  
+
+    body {
+        font-size: 1.3em;
+    }
+
+    .submission input[type=submit]{
+        margin-left: 35em;
+    } 
 }
+

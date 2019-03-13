@@ -34,9 +34,7 @@
     <div class="wrapper">
         
 
-        <section class="form-container">
-                <h1>Become a Model</h1>
-            <article class="form-guide">
+        <section class="form-guide">
                 <h3>GET DISCOVERED</h3>
                 <p>Beyond the Runway International Model Agency is constantly on the lookout for exciting new faces. If you are interested in becoming a model and think you have what it takes, please fill out the form and attach 4 photos based on the guidelines below. If we are interested in your look, we will invite you for an interview. You do not need professional photos or any experience to apply.</p>
             
@@ -70,21 +68,25 @@
             <h3>SUBMIT FORM</h3>
             <form action="./" name="comment-form" method="post" class="comment-form" id="comment-form">
                 <fieldset>
-                  
-                  <legend>Bio</legend>     
+                <legend>Bio</legend>
+                <div class=name>   
                     <label for="name">Full Name: </label>
                     <input type="text" id="name" name="name" class="name">
                     <br>
-                            
+                </div>  
+                <div class=email>            
                     <label for="email">Email: </label>
                     <input type="email" id="email" name="email" class="email">
+                </div>    
                     <br>
-                            
+                <div class=password>            
                     <label for="password">Phone: </label>
                     <input type="integer" id="phone" name="phone">
                     <br>
-                    
+                </div>
                     <label>Date of Birth:</label>
+                    <br>
+                <div class=month>  
                     <label for="month">Month: </label>
                     <select name="month" id="month">
                         <option value=""> - Month - </option>
@@ -101,6 +103,8 @@
                         <option value="November">November</option>
                         <option value="December">December</option>
                     </select>
+                </div>  
+                <div class=day>    
                     <label for="day">Day: </label>
                     <select name="day" id="day">
                         <option value=""> - Day - </option>
@@ -136,6 +140,9 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
+                </div>
+                <div class=year>
+                    <br>
                     <label for="year">Year: </label>
                     <select name="year" id="year">
                         <option value=""> - Year - </option>
@@ -258,8 +265,9 @@
                         <option value="1901">1901</option>
                         <option value="1900">1900</option>
                     </select>
+                </div>
                     <br>
-      
+                <div class=country>
                     <label for="country">Country of Birth: </label>
                     <select name="country" id="country">
                         <option value=""> - Country - </option>
@@ -503,108 +511,58 @@
                         <option value="ZM">Zambia</option>
                         <option value="ZW">Zimbabwe</option>
                     </select>
+                </div>    
                     <br>
-      
-      
-                  </fieldset>
-              
-              
-              
-                </form>
-                <div class="select-01">
-                        <form action="./20-thank-you.html" method="post" name="form-select-01" class="form-select-01" id="form-select-01">            
-                            <label for="sex"> Sex: </label>
-                            <select name="sex" id="sex">
-                                <option value="Female">Female</option>
-                                <option value="Male">Male</option>
-                            </select>
-                            <br>   
-       
-                        </form>
-                    </div><!-- end select-01 -->
-                    <div class="select-02">
-    
-                            <label for="city">City: </label>
-                            <select id="city" name="city" size="6" multiple>
-                                <optgroup label="British Columbia">
-                                    <option>Vancouver</option>
-                                    <option>Victoria</option>
-                                </optgroup>
-                                <optgroup label="Alberta">
-                                    <option>Calgary</option>
-                                    <option>Edmonton</option>
-                                </optgroup>
-                                <optgroup label="Saskatchewan">
-                                    <option>Saskatoon</option>
-                                    <option>Regina</option>
-                                </optgroup>  
-                            </select>
-                            <br>
-                        </form> 
-                    </div><!-- end select-02 -->
-                    <div class="select-03">
-                        <form action="./20-thank-you.html" method="post" name="form-select-03" class="form-select-03" id="form-select-03">            
-                            </select>
-                            <br>
-                            <br>
-                            <input type="submit" value="Submit">
-    
-                        </form>
-                    </div><!-- end select-03 --> 
+                <div class=sex>   
+                    <label for="sex"> Sex: </label>
+                    <select name="sex" id="sex">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    </select>
+                </div>     
+                    <br>   
+                <div class=city>   
+                    <label for="city">City: </label>
+                    <select id="city" name="city" size="6" multiple>
+                    <optgroup label="British Columbia">
+                        <option>Vancouver</option>
+                        <option>Victoria</option>
+                    </optgroup>
+                    <optgroup label="Alberta">
+                        <option>Calgary</option>
+                        <option>Edmonton</option>
+                    </optgroup>
+                    <optgroup label="Saskatchewan">
+                        <option>Saskatoon</option>
+                        <option>Regina</option>
+                    </optgroup>  
+                    </select>
+                </div>     
+         
+                </fieldset>        
             </article>
             
             <article class="photo-submission">
-            <h3>UPLOAD YOUR PHOTOS</h3>    
+                <fieldset>
+                <legend>UPLOAD YOUR PHOTOS</legend>
+                <label for="file">Choose a profile picture:</label>
+                <input type="file" id="file" name="file"accept="image/png, image/jpeg, image/jpg, image/gif">
+                </fieldset>
             </article>    
 
+            <input class=submit type="submit" value="Submit">
+    
+    
+        </form>
         </section>
 
 
                 
     </div>
-        
-        
-        <main>
-          <main>
-      
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                               
-
-
-        <footer>
-            <p>&copy; 2019 Beyond the Runway International Model Agency Copby &copy; Ritu, Moon | BCIT TWD Intake 21</p>
-        </footer>
-    </div>
-    <script src="./scripts/show-nav.js"></script>
-
+<footer>
+    <p>&copy; 2019 Beyond the Runway International Model Agency Copby &copy; Ritu, Moon | BCIT TWD Intake 21</p>
+</footer>
 </body>
+
+<script src="./scripts/show-nav.js"></script>
 </html>
