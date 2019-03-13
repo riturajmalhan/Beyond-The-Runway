@@ -1,22 +1,37 @@
 @charset "utf-8";
 
+main {
+    padding: 0 20px;
+    position: relative;
+}
 
 /*image reset*/
 
 #slideshow { 
-    margin: 50px auto; 
+    margin: 20px 0; 
     margin-bottom: 10px;
     position: relative; 
-    padding: 10px; 
+    //padding: 10px; 
     z-index:1;
+    padding-bottom: calc(100% * (435 / 652));
 }
 
 #slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+    //top: 10px; 
+    //left: 10px; 
+    //right: 10px; 
+    // bottom: 10px; 
     z-index: 1;
 }
 
@@ -31,11 +46,11 @@
     
     word-wrap: break-word;
     position: absolute; 
-    top: 50vh; 
+    //top: 50vh; 
     color:rgb(14, 13, 13);
     z-index:1000;
-    width: 90%;
-    margin-left: 5%;
+    //width: 90%;
+    //margin-left: 5%;
 }
 
 /*@include mq(660px){
@@ -49,13 +64,13 @@
     
     
     #about-us {
+        bottom: 10px;
+        left: 40px;
         word-wrap: break-word;
         position: absolute; 
-        top: 50vh; 
         color: white;
         z-index:1000;
         width: 90%;
-        margin-left: 5%;
     } 
 }
 
@@ -68,20 +83,20 @@
 
 @include mq(1000px){
     #slideshow { 
-        margin: 50px auto; 
-        margin-bottom: 10px;
-        position: relative; 
-        padding: 10px; 
-        z-index:1;
+        // margin: 50px auto; 
+        // margin-bottom: 10px;
+        // position: relative; 
+        // padding: 10px; 
+        // z-index:1;
     }
     
     #slideshow > div { 
-        position: absolute; 
-        top: 10px; 
-        left: 10px; 
-        right: 10px; 
-        bottom: 10px; 
-        z-index: 1;
+        // position: absolute; 
+        // top: 10px; 
+        // left: 10px; 
+        // right: 10px; 
+        // bottom: 10px; 
+        // z-index: 1;
     }
     
     #about-us {
@@ -90,10 +105,17 @@
         }
         word-wrap: break-word;
         position: absolute; 
-        top: 250px; 
         color:#fff;
         z-index:1000;
-        width: 30%;
+        width: 50%;
         margin-left: 5%;
+    } 
+}
+
+@include mq(1130px){
+    #about-us {
+        bottom: auto;
+        top: 150px;
+        width: 30%;
     } 
 }
