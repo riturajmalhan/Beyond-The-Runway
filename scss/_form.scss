@@ -1,7 +1,27 @@
+body {
+    font-family: 'Markazi Text', serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #747474;
+    background: #fff;
+    margin: 0;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+
+legend {
+    font-size: 1.3em;
+}
 
 .wrapper {
+    font-family: 'Markazi Text', serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; 
     padding: 10px;
     font-size: .8em;
     margin: 1em 1em 1em 1em; 
@@ -35,24 +55,7 @@
 }
 
 
-body {
-    font-family: 'HK Grotesk', sans-serif;
-    font-weight: 400;
-    font-size: 0.95rem;
-    color: #747474;
-    background: #fff;
-}
 
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
 @include mq(300px){
    
     .wrapper {
