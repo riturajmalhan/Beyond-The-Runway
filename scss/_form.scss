@@ -30,8 +30,8 @@
 }
 
 .form-submission input, select {
-        display: inline-block;
         float:right;
+        
 }
 
 
@@ -53,11 +53,23 @@ body {
     text-align: left;
     background-color: #fff;
 }
+@include mq(300px){
+   
+    .wrapper {
+     font-size: .8em;
+    }
+    .form-submission input, select {
+        width: 70%;
+}
+}
 @include mq(400px){
    
     .wrapper {
      font-size: 1em;
     }
+    .form-submission input, select {
+        width: 60%;
+}
     
 }
 @include mq(640px){
