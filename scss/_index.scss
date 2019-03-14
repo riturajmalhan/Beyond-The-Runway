@@ -35,15 +35,15 @@ main {
 
 #about-us {
     h1{
-        font-size: 1.3em;
+        font-size: 2em;
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
     
     word-wrap: break-word;
-    position: absolute; 
+     
    
     color:rgb(14, 13, 13);
     z-index:1000;
@@ -68,6 +68,10 @@ footer{
         color: white;
         z-index:1000;
         width: 90%;
+        p {
+            font-size: 1.3em;
+        }
+        
     } 
 }
 
@@ -75,6 +79,9 @@ footer{
 @include mq(900px){
     #about-us {
     color: white;
+    p {
+        font-size: 1.3em;
+    }
     }
 }
 
@@ -91,13 +98,35 @@ footer{
         z-index:1000;
         width: 50%;
         margin-left: 5%;
+        p {
+            font-size: 1em;
+        }
     } 
 }
 
 @include mq(1130px){
     #about-us {
+        .para2{
+            display: block;
+        }
         bottom: auto;
         top: 150px;
         width: 30%;
+        p {
+            font-size: 1em;
+        }
+    } 
+}
+@include mq(1430px){
+    #about-us {
+        .para2{
+            display: block;
+        }
+        bottom: auto;
+        top: 150px;
+        width: 30%;
+        p {
+            font-size: 1.3em;
+        }
     } 
 }
