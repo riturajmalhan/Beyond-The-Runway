@@ -32,3 +32,23 @@ header {
 
     
 }
+@include mq(1000px){
+    header ul{
+        display: flex;  
+          }
+      .logo{
+          margin-left: calc(43% - 4.5em);
+      }    
+
+    
+}
+@include mq(1150px){
+    header ul{
+        display: flex;  
+          }
+      .logo{
+          margin-left: calc(43% - 4em);
+      }    
+
+    
+}

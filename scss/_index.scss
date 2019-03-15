@@ -49,12 +49,7 @@ main {
     z-index:1000;
    
 }
-//Very important footer doesnt work on mobile properly only on index
-//Ask Michael for help
-footer{
-    //display: none;
-    display: block;
-}
+
 
 
 @include mq(640px){
