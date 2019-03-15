@@ -111,6 +111,9 @@ nav {
 @include mq(640px){
     nav{
        margin-left: 0;
+       a{
+           font-size: 1.4em;
+       }
     }
    
 
