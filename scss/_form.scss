@@ -1,7 +1,7 @@
 body {
     font-family: 'Markazi Text', serif;
     font-weight: 400;
-    font-size: 0.95rem;
+    font-size: 1em;
     color: #747474;
     background: #fff;
     margin: 0;
@@ -59,7 +59,7 @@ legend {
 @include mq(300px){
    
     .wrapper {
-     font-size: .8em;
+     font-size: 1em;
     }
     .form-submission input, select {
         width: 70%;
@@ -80,6 +80,7 @@ legend {
     .wrapper p {
         display: flex;
         flex-direction: row;
+        font-size: 1.2em;
     }
     
 }
@@ -89,7 +90,7 @@ legend {
         display: flex;
         flex-direction: row;
         padding: 10px;
-        font-size: .8em;
+        font-size: 1em;
     }  
 
     .form-guide, .submission {
@@ -97,7 +98,7 @@ legend {
     }
 
     body {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .submission input[type=submit]{
